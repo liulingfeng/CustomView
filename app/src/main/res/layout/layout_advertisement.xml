@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/iv_height"
+                android:orientation="vertical">
+
+    <com.llf.loding.view.NotifiableViewFlipper
+        android:id="@+id/viewflipper"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:autoStart="true"
+        android:inAnimation="@anim/slide_in"
+        android:outAnimation="@anim/slide_out"
+        android:flipInterval="2000"
+        android:persistentDrawingCache="animation"
+        />
+
+    <LinearLayout
+        android:id="@+id/indicator"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:background="#15000000"
+        />
+</RelativeLayout>
